@@ -48,18 +48,12 @@ countElement :: [Int] -> Int -> Int
     -- menerima input list of integer l dan sebuah integer n
     -- mengembalikan banyaknya kemunculan n di l
 maxOddRecc :: [Int] -> Int -> Int -> Int
-    -- menerima input list of integer l dan sebuah integer n
+    -- menerima input list of integer l
     -- mengembalikan integer pada l yang ganjil dan paling sering muncul
 -- REALISASI
-countElement l n = if (isEmpty l) then 0 -- Basis
-                   else
-                       if (head l)==n then 1+(countElement (tail l) n) -- Rekurens
-                       else (countElement (tail l) n) -- Rekurens
-maxOddRecc l n nN = if (isEmpty l) then n -- Basis
-                    else if ((mod (head l) 2)==1)&&((countElement l (head l))>n) then -- Rekurens
-                        (maxOddRecc (tail l) (countElement l (head l)) (head l))
-                    else (maxOddRecc (tail l) nN n) -- Rekurens
-maxOdd l = let
-               mO = (maxOddRecc l (-1) 0)
-           in
-               (mO,(countElement l mO))
+countElement l n | isEmpty l = 0
+                 | otherwise = (countElement (tail l) n) + if (head l)==n then 1 else 0
+maxOddRecc l n m | isEmpty l = n
+                 | (countElement l (head l) > m)&&((mod (head l) 2)==1) = maxOddRecc (tail l) (head l) (countElement l (head l))
+                 | otherwise = maxOddRecc (tail l) n m
+maxOdd l = let mO = (maxOddRecc l (-1) 0) in (mO,(countElement l mO))
