@@ -71,6 +71,7 @@ isElement e li = if isEmpty li then False -- Basis
                 else if (head li) == e then True -- Basis
                      else isElement e (tail li) -- Rekurens
 
+-- KEMUNGKINAN SOLUSI YANG SAlAH, karena elemen di l2 bisa dipakai lebih dari sekali
 intersectLists l1 l2 = if (isEmpty l1)||(isEmpty l2) then [] -- Basis
                        else if isElement (head l1) l2 then konso (head l1) (intersectLists (tail l1) l2) -- Rekurens
                             else intersectLists (tail l1) l2 -- Rekurens
