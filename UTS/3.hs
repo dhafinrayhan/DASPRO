@@ -43,10 +43,9 @@ maks2 :: Int -> Int -> Int
 min2 :: Int -> Int -> Int
 -- REALISASI
 isEmpty l = null l
-
+isOneElmt l = (length l) == 1
 maks2 a b = if a>=b then a else b
 min2 a b = if a<=b then a else b
-isOneElmt l = (length l) == 1
 
 -- 3
 -- DEFINISI DAN SPESIFIKASI
