@@ -82,5 +82,5 @@ maksminList li = if isOneElmt li then (head li,head li) -- Basis
                           
 splitListPivot li = if isOneElmt li then ([(head li)],[],(last li)) -- Basis
                     else let (m,n,o) = splitListPivot (tail li) in -- Rekurens
-                             if (head li) <= o then (konsDot m (head li),n,o)
-                             else (m,konsDot n (head li),o)
+                             if (head li) <= o then (konso (head li) m,n,o)
+                             else (m,konso (head li) n,o)
