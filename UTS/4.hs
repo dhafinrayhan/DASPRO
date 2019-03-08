@@ -47,7 +47,9 @@ isOneElmt l = (length l) == 1
 f :: Int -> Bool
 g :: Int -> Bool
 f k = if k == 1 then False else null [ x | x <- [2..k-1], (mod k x) == 0]
+-- memeriksa bilangan prima
 g k = (mod k 3) == 0
+-- memeriksa kelipatan 3
 
 -- 4a
 -- DEFINISI DAN SPESIFIKASI
