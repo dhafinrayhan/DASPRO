@@ -14,4 +14,4 @@ Untuk mematikannya:
 2. Hapus _line 8_ dan _line 86-93_ pada **ManajemenPerpus.pas**.
 
 ## Catatan
-1. Nama-nama buku dan user yang ada pada data CSV sebagian hanyalah karangan, tidak benar nyata adanya.
+1. Nama-nama buku dan user yang ada pada data CSV sebagian hanyalah karangan, tidak benar-benar nyata.
