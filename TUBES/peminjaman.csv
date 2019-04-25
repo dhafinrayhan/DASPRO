@@ -1,0 +1,3 @@
+Username,ID_Buku,Tanggal_Peminjaman,Tanggal_Batas_Pengembalian,Status_Pengembalian
+penguin,1234,01/01/2019,20/01/2019,false
+lenovo,9999,30/03/2019,02/04/2020,true
