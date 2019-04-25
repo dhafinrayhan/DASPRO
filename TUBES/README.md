@@ -15,3 +15,8 @@ Untuk mematikannya:
 
 ## Catatan
 1. Nama-nama buku dan user yang ada pada data CSV sebagian hanyalah karangan, tidak benar-benar nyata.
+
+## To-Do List
+- [ ] Melengkapi comment
+- [ ] Membuat _test cases_
+- [ ] Menambah data pada file CSV
