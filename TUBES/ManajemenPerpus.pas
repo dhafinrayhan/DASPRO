@@ -83,14 +83,12 @@ begin
             { F16 } 'exit' : begin
                 exit(menuloop, data_buku, data_user, data_peminjaman, data_pengembalian, data_kehilangan);
             end;
-            { !!!! TESTING BLOCK : START }
             { TESTING ONLY } 'ld' : begin
                 ld(data_buku, data_user, data_peminjaman, data_pengembalian, data_kehilangan);
             end;
             { TESTING ONLY } 'sv' : begin
                 sv(data_buku, data_user, data_peminjaman, data_pengembalian, data_kehilangan);
             end;
-            { !!!! TESTING BLOCK : END }
             else begin
                 writeln(errorMsg);
             end;
