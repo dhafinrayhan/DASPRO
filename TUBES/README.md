@@ -12,3 +12,6 @@ Pada program ini dibuat debug mode untuk keperluan testing, yang menambahkan fit
 Untuk mematikannya:
 1. Hapus file **uDEBUG.pas**.
 2. Hapus _line 8_ dan _line 86-93_ pada **ManajemenPerpus.pas**.
+
+## Catatan
+1. Nama-nama buku dan user yang ada pada data CSV sebagian hanyalah karangan, tidak benar nyata adanya.
