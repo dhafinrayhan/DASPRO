@@ -1,1 +1,0 @@
-// bikin sendiri ya, wkwk
