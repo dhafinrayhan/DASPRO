@@ -1,6 +1,5 @@
 program tesSave;
 uses udatamhs;
-{ Buat tabel dataJual sendiri }
 
 var
     i, n : integer;
