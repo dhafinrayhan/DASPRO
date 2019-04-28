@@ -17,8 +17,8 @@ begin
         writeln('Item ke-', i);
         write('KdKategori: ');
         readln(item.KdKategori);
-        write('KDProduk: ');
-        readln(item.KDProduk);
+        write('KdProduk: ');
+        readln(item.KdProduk);
         write('Hasil: ');
         readln(item.Hasil);
         t.TJual[i] := item;
